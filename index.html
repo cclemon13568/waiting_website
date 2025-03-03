@@ -72,6 +72,8 @@
         /* 文字訊息 */
         .message-container {
             margin-bottom: 20px;
+            line-height: 1; /* 設定行距 */
+
         }
 
         .yellow-text {
@@ -105,6 +107,7 @@
             opacity: 0.8; /* 滑鼠懸停時稍微變暗 */
         }
 
+
     </style>
 </head>
 
@@ -133,19 +136,25 @@
 
     <!-- 文字訊息 -->
     <div class="message-container">
-        <p class="yellow-text">很抱歉！此網頁目前無法加載！QQ</p>
-        <p class="red-text">您的訂單已被保存不會被取消！</p>
-        <p class="yellow-text">請稍待片刻，我們會盡快處理讓您付款。</p>
+        <p class="yellow-text">此網頁目前正在加載！QQ</p>
+        <p class="red-text">！您尚未結帳完成！</p>
+        <p class="red-text">！但您的訂單已被保存不會被取消！</p>
+        <p class="red-text">！若是離開此畫面訂單將要重新下單！</p>
+
+        <p class="yellow-text">請稍待片刻，別離開此畫面，我們會盡快處理並讓您繼續付款。</p>
     </div>
 
     <!-- 可點擊變更的動畫圖片 -->
     <div class="image-container">
         <img id="switchImage" src="loading1.gif" alt="Loading Animation">
+        <p id="imageText" class="blue-text"></p>
     </div>
 
-    <div>
+
+
+    <div class="message-container">
         <p class="blue-text">等待的過程讓我們看看可愛的GIF打發時間</p>
-        <p class="blue-text">點擊可以看更多哦</p>
+        <p class="blue-text">點擊可以看更多：D</p>
     </div>
 
 
