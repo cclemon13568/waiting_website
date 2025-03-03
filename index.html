@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate - 當機等候頁面</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+    <style>
+        body{
+            background-color: white;
+            text-align: center;
+            font-family: Arial, sans-serif; //字體
+        }
+
+        header{
+            margin: 40px 0 20px 0; /*分別是上 右 下 左邊距*/
+        }
+
+        #logo {
+            width: 500px;       /* 可根據實際圖片大小調整 */
+            cursor: pointer;    /*設定滑鼠游標的樣式*/
+        }
+
+        nav{
+            background-color: #4368ab;  /* 安利美特的藍色 */
+            padding: 1px;
+        }
+
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li{
+            display: inline;
+            color: white;
+            font-size: 16px;
+            margin: 0 20px;     /*上下 左右*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="animate LOGO" id="logo" title="回到安利美特線上商店">
+    </header>
+
+    <!--導覽列（navigation bar）-->
+    <nav>
+        <ul>
+            <li>新品上架</li>
+            <li>預購商品</li>
+            <li>書籍專區</li>
+            <li>周邊專區</li>
+            <li>影音專區</li>
+            <li>GL專區</li>
+            <li>I.G Port ONLINESTORE</li>
+            <li>bones store</li>
+            <li>スタジオぴえろStore</li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>   <!--點擊標題回到首頁-->
+
+</body>
+</html>
