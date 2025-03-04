@@ -17,18 +17,18 @@ const images = [
     { src: "loading11.gif", text: "還要等哦" },
 ];
 
-// 取得圖片和文字元素
+//取得圖片和文字元素
 const imageElement = document.getElementById("switchImage");
 const textElement = document.getElementById("imageText");
 
-// ✅ **當網頁載入時，隨機選擇一張圖片與對應的文字**
+//當網頁載入時，隨機選擇一張圖片與對應的文字
 document.addEventListener("DOMContentLoaded", function () {
     let randomIndex = Math.floor(Math.random() * images.length);
     imageElement.src = images[randomIndex].src;
     textElement.textContent = images[randomIndex].text;
 });
 
-// ✅ **點擊圖片時隨機變換圖片與文字**
+//點擊圖片時隨機變換圖片與文字
 imageElement.addEventListener("click", function () {
     let randomIndex;
     do {
